@@ -209,7 +209,7 @@ jobs:
         run: |
           CONFNAME="sr_ru_basic.conf"
           cp source/General.txt conf/General.tmp
-          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/misha-tgshv/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
+          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/self-reality/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
 
           {
             cat conf/General.tmp
@@ -233,7 +233,7 @@ jobs:
         run: |
             CONFNAME="sr_ru_whitelist.conf"
             cp source/General.txt conf/General.tmp
-            sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/misha-tgshv/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
+            sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/self-reality/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
             sed -i 's|^dns-server =.*|dns-server = system|' conf/General.tmp
 
             {
@@ -252,7 +252,7 @@ jobs:
         run: |
           CONFNAME="sr_ru_keen.conf"
           cp source/General.txt conf/General.tmp
-          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/misha-tgshv/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
+          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/self-reality/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
 
           {
             cat conf/General.tmp
@@ -275,7 +275,7 @@ jobs:
         run: |
           CONFNAME="sr_nonru_basic.conf"
           cp source/General.txt conf/General.tmp
-          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/misha-tgshv/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
+          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/self-reality/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
           
           {
             cat conf/General.tmp
@@ -300,7 +300,7 @@ jobs:
         run: |
           CONFNAME="sr_ru_mini.conf"
           cp source/General.txt conf/General.tmp
-          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/misha-tgshv/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
+          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/self-reality/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
           {
             cat conf/General.tmp
             echo "# Выборочные правила маршрутизации"
@@ -360,7 +360,7 @@ jobs:
         run: |
           CONFNAME="sr_ru_geo.conf"
           cp source/General.txt conf/General.tmp
-          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/misha-tgshv/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
+          sed -i "s|^update-url =.*|update-url = https://cdn.jsdelivr.net/gh/self-reality/shadowrocket-configuration-file@main/conf/${CONFNAME}|" conf/General.tmp
     
           {
             cat conf/General.tmp
